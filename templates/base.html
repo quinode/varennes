@@ -1,0 +1,61 @@
+{% load i18n static coop_navigation %}
+<html>
+<head>
+    {% block extra-head %}{% endblock %}
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" /> 
+    <meta name="description" content="{% block meta_description %}{% endblock %}" /> 
+    <meta name="google-site-verification" content="QLXJbEBuQxJgE1XcKht7ybGcac8d3yMhO4DKSJTSjDE" />
+    <title>{% block meta_title %}{% endblock %} | Mairie de Varennes-sur-Allier</title>
+        
+    <script type="text/javascript" charset="utf-8" src="{{ STATIC_URL }}js/jquery-1.7.min.js"></script>        
+    
+    {% block stylesheet %}
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/reset.css" type="text/css" />
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/960.css" type="text/css" />
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css" />
+    {% endblock %}
+    
+    {% block javascript %}
+    {% endblock %}
+</head>
+<body>
+<div class="container_12" id="wrapper">
+    
+    <div id="entete">
+    
+    <img src="{{STATIC_URL}}img/logo.png" alt="Varennes-sur-Allier" id="logo"/>
+    
+    {% block navigation %}
+    <nav class="grid_12">
+        <ul id="nav">{% navigation_as_nested_ul %}</ul>
+    </nav>
+    {% endblock %}
+    
+    </div>
+
+    <div id="page">
+        {% block content %}
+        
+              <!--content--> 
+                   
+        {% endblock %}
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="footer">
+    {% block footer %}
+
+   
+    
+    {% endblock %}
+    </div>
+
+</div>
+
+{% block page-close %}
+
+{% endblock %}
+
+</body></html>
