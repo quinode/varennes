@@ -28,14 +28,15 @@
 }
 
 @font-face {
-	font-family: 'Ubuntu';
-	src: url('/static/fonts/Ubuntu-Regular-webfont.eot');
-	src: url('/static/fonts/Ubuntu-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/static/fonts/Ubuntu-Regular-webfont.woff') format('woff'),
-         url('/static/fonts/Ubuntu-Regular-webfont.ttf') format('truetype'),
-         url('/static/fonts/Ubuntu-Regular-webfont.svg#UbuntuRegular') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Museo700';
+    src: url('/static/fonts/museo700-regular-webfont.eot');
+    src: url('/static/fonts/museo700-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/museo700-regular-webfont.woff') format('woff'),
+         url('/static/fonts/museo700-regular-webfont.ttf') format('truetype'),
+         url('/static/fonts/museo700-regular-webfont.svg#Museo700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 /* @end */
@@ -43,95 +44,203 @@
 body {
 	background-color: #999;
 	font-family: Ubuntu,"Lucida Grande", Lucida, Verdana, sans-serif;
+	background-image: url(/static/img/brushed_alu_dark.png);
 }
 
-.blanc {
-	background-color: white;
+/* @group topbar */
+
+.topbar .container{
+	width: 990px;
+}
+
+.topbar{
+	font-family: Museo500, "Times New Roman", Times, serif;
+}
+
+.topbar a {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.topbar h3 a, .topbar .brand {
+  color: #ffffff;
+}
+
+
+.topbar-inner, .topbar .fill {
+  background-color: #3E8914;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#67E422), to(#3E8914));
+  background-image: -moz-linear-gradient(top, #67E422, #3E8914);
+  background-image: -ms-linear-gradient(top, #67E422, #3E8914);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #67E422), color-stop(100%, #3E8914));
+  background-image: -webkit-linear-gradient(top, #67E422, #3E8914);
+  background-image: -o-linear-gradient(top, #67E422, #3E8914);
+  background-image: linear-gradient(top, #67E422, #3E8914);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#67E422', endColorstr='#3E8914', GradientType=0);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.topbar div > ul a:hover, .nav a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+.topbar div > ul .active > a, .nav .active > a {
+  background-color: #4BA917;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.topbar div > ul .menu-dropdown,
+.nav .menu-dropdown,
+.topbar div > ul .dropdown-menu,
+.nav .dropdown-menu {
+  background-color: #50ab1d;
+}
+.topbar div > ul .menu-dropdown a.menu,
+.nav .menu-dropdown a.menu,
+.topbar div > ul .dropdown-menu a.menu,
+.nav .dropdown-menu a.menu,
+.topbar div > ul .menu-dropdown .dropdown-toggle,
+.nav .menu-dropdown .dropdown-toggle,
+.topbar div > ul .dropdown-menu .dropdown-toggle,
+.nav .dropdown-menu .dropdown-toggle {
+  color: #ffffff;
+}
+
+
+.topbar div > ul .menu-dropdown li a,
+.nav .menu-dropdown li a,
+.topbar div > ul .dropdown-menu li a,
+.nav .dropdown-menu li a {
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+.topbar div > ul .menu-dropdown li a:hover,
+.nav .menu-dropdown li a:hover,
+.topbar div > ul .dropdown-menu li a:hover,
+.nav .dropdown-menu li a:hover {
+  background-color: #459B15;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#5FD41F), to(#459B15));
+  background-image: -moz-linear-gradient(top, #5FD41F, #459B15);
+  background-image: -ms-linear-gradient(top, #5FD41F, #459B15);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5FD41F), color-stop(100%, #459B15));
+  background-image: -webkit-linear-gradient(top,#5FD41F,#459B15);
+  background-image: -o-linear-gradient(top, #5FD41F, #459B15);
+  background-image: linear-gradient(top, #5FD41F, #459B15);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5FD41F', endColorstr='#459B15', GradientType=0);
+  color: #ffffff;
+}
+.topbar div > ul .menu-dropdown .active a,
+.nav .menu-dropdown .active a,
+.topbar div > ul .dropdown-menu .active a,
+.nav .dropdown-menu .active a {
+  color: #ffffff;
+}
+.topbar div > ul .menu-dropdown .divider,
+.nav .menu-dropdown .divider,
+.topbar div > ul .dropdown-menu .divider,
+.nav .dropdown-menu .divider {
+  background-color: #222;
+  border-color: #444;
+}
+
+
+.menu-dropdown .divider, .dropdown-menu .divider {
+  height: 1px;
+  margin: 5px 0;
+  overflow: hidden;
+  background-color: #eee;
+  border-bottom: 1px solid #ffffff;
+}
+.topbar .dropdown-menu a, .dropdown-menu a {
+  display: block;
+  padding: 4px 15px;
+  clear: both;
+  font-weight: normal;
+  line-height: 18px;
+  color: #808080;
+  text-shadow: 0 1px 0 #ffffff;
+}
+.topbar .dropdown-menu a:hover,
+.dropdown-menu a:hover,
+.topbar .dropdown-menu a.hover,
+.dropdown-menu a.hover {
+  background-color: #dddddd;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#eeeeee), to(#dddddd));
+  background-image: -moz-linear-gradient(top, #eeeeee, #dddddd);
+  background-image: -ms-linear-gradient(top, #eeeeee, #dddddd);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #dddddd));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #dddddd);
+  background-image: -o-linear-gradient(top, #eeeeee, #dddddd);
+  background-image: linear-gradient(top, #eeeeee, #dddddd);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#dddddd', GradientType=0);
+  color: #404040;
+  text-decoration: none;
+  -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.025), inset 0 -1px rgba(0, 0, 0, 0.025);
+  -moz-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.025), inset 0 -1px rgba(0, 0, 0, 0.025);
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.025), inset 0 -1px rgba(0, 0, 0, 0.025);
+}
+.open .menu,
+.dropdown.open .menu,
+.open .dropdown-toggle,
+.dropdown.open .dropdown-toggle {
+  color: #ffffff;
+  background: #ccc;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+/* @end */
+
+
+
+#ombre{
+	padding-left: 39px;
+	padding-right: 39px;
+	background-image: url(/static/img/ombre.png);
+}
+
+
+#wrapper{
+	background: white url(/static/img/fond-mairie4.jpg) no-repeat 0 40px;
+	padding-top: 40px;
+	position: relative;
+}
+
+#logo {
+	width: 230px;
+	position: relative;
+	display: block;
+	margin-top: 20px;
+	margin-left: 40px;
+}
+
+
+
+#logo-mini {
+	width: 160px;
+	position: relative;
+	display: block;
+	margin-top: 20px;
+	margin-left: 40px;
 }
 
 #page {
 	height: 800px;
 }
 
-/* @group Bandeau */
 
-#bandeau {
-	height: 120px;
-	position: relative;
-	background: url(/static/img/puy-de-dome.jpg) no-repeat right;
-}
 
-#logo {
-	position: absolute;
-	top: 15px;
-	left: 40px;
-}
-
-#entete h1 {
+h1, h2 {
 	color: #2a4ca0;
-	position: absolute;
-	left: 160px;
-	top: 29px;
-	font: 18px Museo500, "Trebuchet MS", Trebuchet, Tahoma, Arial;
-}
-
-#entete h1 span {
-	font-size: 30px;
-	display: block;
-	margin-top: 6px;
-}
-
-#menubar {
-	position: relative;
-	left: -32px;
-	width: 1024px;
-	height: 74px;
-	background: url(/static/img/bandeau.png) no-repeat;
-}
-
-#navigation {
-	text-align: center;
-}
-
-#navigation li {
-	color: #191919;
-	font: 18px Ubuntu,"Trebuchet MS", Trebuchet, Tahoma, Arial;
-	display: inline-block;
-	padding-top: 12px;
-}
-
-#email {
-	width: 23px;
-	vertical-align: -3px;
-}
-
-li.sep {
-	padding-right: 10px;
-	padding-left: 10px;
-	text-shadow: #eee 1px 1px 0;
-}
-
-#navigation li a {
-	color: #191919;
-	text-decoration: none;
-	text-shadow: #eee 1px 1px 0;
-	padding: 4px 10px 3px;
-	behavior: url(/static/css/PIE.htc);
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	border-radius: 6px;
-}
-
-#navigation li a:hover {
-	background-color: #c9ee8f;
-}
-
-
-/* @end */
-
-h2 {
-	color: #2a4ca0;
-	font: 32px Museo500, "Trebuchet MS", Trebuchet, Tahoma, Arial;
+	font: 36px Museo700, "Trebuchet MS", Trebuchet, Tahoma, Arial;
 	margin-bottom: 10px;
 }
 
@@ -144,28 +253,135 @@ h4 {
 	padding-left: 20px;
 }
 
-.colonne {
-	padding-right: 10px;
+#index-widgets{
+	position: relative;
+	height: 500px;
+}
+
+#adm-widgets{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#manifestations{
+	top: 140px;
+	position: absolute;
+	left: 40px;
+}
+
+#commune{
+	position: absolute;
+	right: 40px;
+}
+
+#sport{
+	position: absolute;
+	right: 40px;
+	top: 260px;
 }
 
 .widget {
-	border: 1px solid #A7A7A7;
-	text-align: center;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 8px;
-	border-radius: 10px;
-	-webkit-box-shadow: #858585 0px 2px 4px;
-	-moz-box-shadow: #858585 0px 2px 4px;
-	box-shadow: #858585 0px 2px 4px;
-	background: #FFF;
-	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#FFF), to(#F1F1F1));
-	background: -webkit-linear-gradient(#FFF, #F1F1F1);
-	background: -moz-linear-gradient(#FFF, #F1F1F1);
-	background: -ms-linear-gradient(#FFF, #F1F1F1);
-	background: -o-linear-gradient(#FFF, #F1F1F1);
-	background: linear-gradient(#FFF, #F1F1F1);
-	-pie-background: linear-gradient(#FFF, #F1F1F1);
+	border: 4px solid white;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
 	behavior: url(/static/css/PIE.htc);
-	margin-bottom: 10px;
+	background-color: rgba(255,254,255,0.6);
+	box-shadow:2px 2px 5px #555;
+    -webkit-box-shadow:2px 2px 5px #555;
+    -moz-box-shadow:2px 2px 5px #555;
+}
+
+
+.widget-title{
+	-webkit-border-radius: 14px;
+	-moz-border-radius: 14px;
+	border-radius: 14px;
+	behavior: url(/static/css/PIE.htc);
+
+	height: 50px;
+}
+
+#manifestations .widget-title{
+		background-image: url(/static/img/title-manif.png);
+}
+
+#commune .widget-title{
+		background-image: url(/static/img/title-commune.png);
+}
+
+#sport .widget-title{
+		background-image: url(/static/img/title-sport.png);
+}
+
+
+.widget-title h2{
+	font: 22px Museo700, "Trebuchet MS", Trebuchet, Tahoma, Arial;
+	padding-left: 90px;
+	color: white;
+	text-shadow: #0c0c0c 2px 2px 3px;
+	padding-top: 10px;
+}
+
+ul.widget-items{
+	list-style-type: none;
+	margin: 10px;
+	padding: 0;
+	overflow-y: scroll;
+	overflow-x: none;
+}
+
+#manifestations ul.widget-items{
+	height: 280px;
+}
+
+#commune ul.widget-items,
+#sport ul.widget-items{
+	height:160px;
+}
+
+
+li.widget-item{
+	display: block;
+	border: 1px solid #bbb;
+	padding: 8px;
+	color: #3d3d3d;
+}
+
+img.widget-icon{
+	float: left;
+	width: 48px;
+	height: 48px;
+	margin-top: -8px;
+	margin-left: 18px;
+}
+
+.adm-widget{
 	padding: 10px;
+}
+
+#adm-widgets img{
+	float: left;
+	padding-right: 10px;
+}
+
+h4{
+		font: 20px Museo700, "Trebuchet MS", Trebuchet, Tahoma, Arial;
+	color: #8f8f8f;
+}
+
+h2#title{
+	position: absolute;
+	left: 220px;
+	top: 140px;
+}
+
+#content{
+	padding: 20px 40px;
+	font-size: 16px;
+}
+
+div#admin-bar{
+	top: 50px;
+	position: absolute;
 }

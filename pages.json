@@ -1,0 +1,851 @@
+[
+    {
+        "pk": 1, 
+        "model": "coop_cms.navtype", 
+        "fields": {
+            "search_field": "", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "label_rule": 0
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": null, 
+            "ordering": 1, 
+            "object_id": 2, 
+            "label": "Pr\u00e9sentation", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 1, 
+            "ordering": 1, 
+            "object_id": 3, 
+            "label": "Plan de la ville", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 1, 
+            "ordering": 2, 
+            "object_id": 4, 
+            "label": "Edito du maire", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": null, 
+            "ordering": 2, 
+            "object_id": 5, 
+            "label": "Conseil municipal", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 4, 
+            "ordering": 1, 
+            "object_id": 6, 
+            "label": "Les conseillers", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 4, 
+            "ordering": 2, 
+            "object_id": 7, 
+            "label": "Comptes-rendus", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 4, 
+            "ordering": 3, 
+            "object_id": 8, 
+            "label": "Conseil des enfants", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": null, 
+            "ordering": 3, 
+            "object_id": 9, 
+            "label": "Services Publics", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 8, 
+            "ordering": 1, 
+            "object_id": 10, 
+            "label": "Personnel municipal", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 8, 
+            "ordering": 2, 
+            "object_id": 11, 
+            "label": "Services administratifs", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 8, 
+            "ordering": 3, 
+            "object_id": 12, 
+            "label": "Services technique", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 8, 
+            "ordering": 4, 
+            "object_id": 13, 
+            "label": "Cimeti\u00e8re", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 8, 
+            "ordering": 5, 
+            "object_id": 14, 
+            "label": "Police municipale", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 8, 
+            "ordering": 6, 
+            "object_id": 15, 
+            "label": "Restaurant municipal", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 8, 
+            "ordering": 7, 
+            "object_id": 16, 
+            "label": "Service enfance", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 8, 
+            "ordering": 8, 
+            "object_id": 17, 
+            "label": "Point Information Jeunesse", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 8, 
+            "ordering": 9, 
+            "object_id": 18, 
+            "label": "M\u00e9diath\u00e8que", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 8, 
+            "ordering": 10, 
+            "object_id": 19, 
+            "label": "Autres services", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": null, 
+            "ordering": 5, 
+            "object_id": 21, 
+            "label": "Vie \u00e9conomique", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 20, 
+            "ordering": 1, 
+            "object_id": 22, 
+            "label": "Commerces", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 20, 
+            "ordering": 2, 
+            "object_id": 23, 
+            "label": "Artisanat", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 20, 
+            "ordering": 3, 
+            "object_id": 24, 
+            "label": "Services", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 20, 
+            "ordering": 4, 
+            "object_id": 25, 
+            "label": "Liens utiles", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": null, 
+            "ordering": 6, 
+            "object_id": 26, 
+            "label": "Vie associative", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 25, 
+            "ordering": 1, 
+            "object_id": 27, 
+            "label": "Sport", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 25, 
+            "ordering": 2, 
+            "object_id": 28, 
+            "label": "Culture", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 25, 
+            "ordering": 3, 
+            "object_id": 29, 
+            "label": "Patriotique", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 25, 
+            "ordering": 4, 
+            "object_id": 30, 
+            "label": "Philantropie", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 25, 
+            "ordering": 5, 
+            "object_id": 31, 
+            "label": "Parascolaire", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 25, 
+            "ordering": 6, 
+            "object_id": 32, 
+            "label": "Loisirs, divers", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": null, 
+            "ordering": 7, 
+            "object_id": 20, 
+            "label": "March\u00e9s publics", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Pr\u00e9sentation", 
+            "created": "2011-11-14 11:25:02", 
+            "modified": "2011-11-14 11:25:02", 
+            "content": "contenu de la page", 
+            "slug": "presentation"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Plan de la ville", 
+            "created": "2011-11-14 11:25:14", 
+            "modified": "2011-11-14 11:25:14", 
+            "content": "contenu de la page", 
+            "slug": "plan-de-la-ville"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Edito du maire", 
+            "created": "2011-11-14 11:25:28", 
+            "modified": "2011-11-14 11:25:28", 
+            "content": "contenu de la page", 
+            "slug": "edito-du-maire"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Conseil municipal", 
+            "created": "2011-11-14 11:25:48", 
+            "modified": "2011-11-14 11:25:48", 
+            "content": "contenu de la page", 
+            "slug": "conseil-municipal"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Les conseillers", 
+            "created": "2011-11-14 11:26:07", 
+            "modified": "2011-11-14 11:26:07", 
+            "content": "contenu de la page", 
+            "slug": "les-conseillers"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Comptes-rendus", 
+            "created": "2011-11-14 11:26:19", 
+            "modified": "2011-11-14 11:26:19", 
+            "content": "contenu de la page", 
+            "slug": "comptes-rendus"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Conseil des enfants", 
+            "created": "2011-11-14 11:26:36", 
+            "modified": "2011-11-14 11:26:36", 
+            "content": "contenu de la page", 
+            "slug": "conseil-des-enfants"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Services Publics", 
+            "created": "2011-11-14 11:26:50", 
+            "modified": "2011-11-14 11:26:50", 
+            "content": "contenu de la page", 
+            "slug": "services-publics"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Personnel municipal", 
+            "created": "2011-11-14 11:27:16", 
+            "modified": "2011-11-14 11:27:16", 
+            "content": "contenu de la page", 
+            "slug": "personnel-municipal"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Services administratifs", 
+            "created": "2011-11-14 11:27:31", 
+            "modified": "2011-11-14 11:27:31", 
+            "content": "contenu de la page", 
+            "slug": "services-administratifs"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Services technique", 
+            "created": "2011-11-14 11:28:04", 
+            "modified": "2011-11-14 11:28:04", 
+            "content": "contenu de la page", 
+            "slug": "services-technique"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Cimeti\u00e8re", 
+            "created": "2011-11-14 11:28:18", 
+            "modified": "2011-11-14 11:28:18", 
+            "content": "contenu de la page", 
+            "slug": "cimetiere"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Police municipale", 
+            "created": "2011-11-14 11:28:35", 
+            "modified": "2011-11-14 11:28:35", 
+            "content": "contenu de la page", 
+            "slug": "police-municipale"
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Restaurant municipal", 
+            "created": "2011-11-14 11:28:51", 
+            "modified": "2011-11-14 11:28:51", 
+            "content": "contenu de la page", 
+            "slug": "restaurant-municipal"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Service enfance", 
+            "created": "2011-11-14 11:29:10", 
+            "modified": "2011-11-14 11:29:10", 
+            "content": "contenu de la page", 
+            "slug": "service-enfance"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Point Information Jeunesse", 
+            "created": "2011-11-14 11:29:39", 
+            "modified": "2011-11-14 11:29:39", 
+            "content": "contenu de la page", 
+            "slug": "point-information-jeunesse"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "M\u00e9diath\u00e8que", 
+            "created": "2011-11-14 11:30:05", 
+            "modified": "2011-11-14 11:30:05", 
+            "content": "contenu de la page", 
+            "slug": "mediatheque"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Autres services", 
+            "created": "2011-11-14 11:30:16", 
+            "modified": "2011-11-14 11:30:16", 
+            "content": "contenu de la page", 
+            "slug": "autres-services"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "March\u00e9s publics", 
+            "created": "2011-11-14 11:30:37", 
+            "modified": "2011-11-14 11:30:37", 
+            "content": "contenu de la page", 
+            "slug": "marches-publics"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Vie \u00e9conomique", 
+            "created": "2011-11-14 11:30:50", 
+            "modified": "2011-11-14 11:30:50", 
+            "content": "contenu de la page", 
+            "slug": "vie-economique"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Commerces", 
+            "created": "2011-11-14 11:31:06", 
+            "modified": "2011-11-14 11:31:06", 
+            "content": "contenu de la page", 
+            "slug": "commerces"
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Artisanat", 
+            "created": "2011-11-14 11:31:17", 
+            "modified": "2011-11-14 11:31:17", 
+            "content": "contenu de la page", 
+            "slug": "artisanat"
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Services", 
+            "created": "2011-11-14 11:31:29", 
+            "modified": "2011-11-14 11:31:29", 
+            "content": "contenu de la page", 
+            "slug": "services"
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Liens utiles", 
+            "created": "2011-11-14 11:32:01", 
+            "modified": "2011-11-14 11:32:01", 
+            "content": "contenu de la page", 
+            "slug": "liens-utiles"
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Vie associative", 
+            "created": "2011-11-14 11:32:12", 
+            "modified": "2011-11-14 11:32:12", 
+            "content": "contenu de la page", 
+            "slug": "vie-associative"
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Sport", 
+            "created": "2011-11-14 11:32:27", 
+            "modified": "2011-11-14 11:32:27", 
+            "content": "contenu de la page", 
+            "slug": "sport"
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Culture", 
+            "created": "2011-11-14 11:32:39", 
+            "modified": "2011-11-14 11:32:39", 
+            "content": "contenu de la page", 
+            "slug": "culture"
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Patriotique", 
+            "created": "2011-11-14 11:32:52", 
+            "modified": "2011-11-14 11:32:52", 
+            "content": "contenu de la page", 
+            "slug": "patriotique"
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Philantropie", 
+            "created": "2011-11-14 11:33:05", 
+            "modified": "2011-11-14 11:33:05", 
+            "content": "contenu de la page", 
+            "slug": "philantropie"
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Parascolaire", 
+            "created": "2011-11-14 11:33:17", 
+            "modified": "2011-11-14 11:33:17", 
+            "content": "contenu de la page", 
+            "slug": "parascolaire"
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Loisirs, divers", 
+            "created": "2011-11-14 11:33:36", 
+            "modified": "2011-11-14 11:33:36", 
+            "content": "contenu de la page", 
+            "slug": "loisirs-divers"
+        }
+    }
+]

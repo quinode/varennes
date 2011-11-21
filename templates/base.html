@@ -1,61 +1,138 @@
+<!DOCTYPE html>
 {% load i18n static coop_navigation %}
-<html>
+<html lang="fr">
 <head>
-    {% block extra-head %}{% endblock %}
+        
     <meta http-equiv="X-UA-Compatible" content="IE=8">
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" /> 
     <meta name="description" content="{% block meta_description %}{% endblock %}" /> 
     <meta name="google-site-verification" content="QLXJbEBuQxJgE1XcKht7ybGcac8d3yMhO4DKSJTSjDE" />
     <title>{% block meta_title %}{% endblock %} | Mairie de Varennes-sur-Allier</title>
-        
-    <script type="text/javascript" charset="utf-8" src="{{ STATIC_URL }}js/jquery-1.7.min.js"></script>        
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="{{STATIC_URL}}css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="{{STATIC_URL}}css/style.css" type="text/css" rel="stylesheet">
+    <link href="{{STATIC_URL}}css/admin_bar.css" type="text/css" rel="stylesheet" />
     
-    {% block stylesheet %}
-        <link rel="stylesheet" href="{{ STATIC_URL }}css/reset.css" type="text/css" />
-        <link rel="stylesheet" href="{{ STATIC_URL }}css/960.css" type="text/css" />
-        <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css" />
-    {% endblock %}
+    <script type="text/javascript" charset="utf-8" src="{{ STATIC_URL }}js/jquery-1.7.min.js"></script>        
+    <script type="text/javascript" charset="utf-8" src="{{ STATIC_URL }}js/bootstrap-dropdown.js"></script>        
+    <script type="text/javascript" charset="utf-8" src="{{ STATIC_URL }}js/jquery.pageslide.min.js"></script>
+
+     {% block extra_head %}{% endblock %}
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
     
     {% block javascript %}
     {% endblock %}
+
+    <script type="text/javascript">
+    $(function(){
+        $('#topbar').dropdown()
+    /* $(".dropdown-toggle, .menu").click(function (e) {
+          var $li = $(this).parent("li").toggleClass('open');
+          return false;
+        });*/
+            });
+    </script>
+
 </head>
+
 <body>
-<div class="container_12" id="wrapper">
-    
-    <div id="entete">
-    
-    <img src="{{STATIC_URL}}img/logo.png" alt="Varennes-sur-Allier" id="logo"/>
-    
-    {% block navigation %}
-    <nav class="grid_12">
-        <ul id="nav">{% navigation_as_nested_ul %}</ul>
-    </nav>
-    {% endblock %}
-    
+  <div class="topbar">
+    <div class="fill">
+      <div class="container">
+          <a class="brand" href="/">Varennes-sur-Allier</a>
+          {% block navigation %}
+          <ul class="nav" data-dropdown="dropdown">
+                  {% navigation_as_nested_ul li_template="coop_cms/dropdown_li.html" ul_template="coop_cms/dropdown_ul.html" li_args="coop_cms/dropdown_li_class.html" %}
+          </ul>
+          {% endblock %}
+      </div>
     </div>
+  </div>
+
+<div class="container" id="ombre">
+<div class="container" id="wrapper">
+
+    {% block logo %}
+    <img src="{{STATIC_URL}}img/logo.png" alt="Varennes-sur-Allier" id="logo"/>
+    {% endblock %}
 
     <div id="page">
-        {% block content %}
-        
-              <!--content--> 
-                   
-        {% endblock %}
+          {% block document %}
+          
+                <!--content--> 
+
+          {% endblock %}
+          
+          <div class="row" id="adm-widgets">
+              <div class="span9 widget">
+          
+                <div class="adm-widget">
+                <img id="sp" alt="service-public.fr" src="{{STATIC_URL}}img/sp.jpg">
+                <h4>Accés aux démarches administratives</h4>
+                
+                
+                </div>
+          
+              </div>
+          
+              <div class="span5 widget">
+                  
+                  <div class="adm-widget">
+                  
+                  <img id="fp" alt="Finances Publiques" src="{{STATIC_URL}}img/fp.png">
+
+                <h4>Paiement TIPI</h4>
+                <p>Réglez vos titres de 
+                  paiement rapidement 
+                  et de manière sécurisée
+                  sur ce site.</p>
+                </div>
+          
+              </div>
+          </div>
     </div>
 
     <div class="clear"></div>
 
     <div id="footer">
-    {% block footer %}
+      {% block footer %}
 
-   
-    
-    {% endblock %}
-    </div>
+
+
+      {% endblock %}
+      </div>
 
 </div>
+</div>
 
-{% block page-close %}
+<script type="text/javascript">
+$(function(){
+    {% block jquery %}
+    $("#perso").pageSlide({width:'350px', direction:'right'});
+    {% endblock %}
+});
+</script>
 
-{% endblock %}
+{% include "coop_cms/_admin_bar.html" %}
+  {% block page-close %}
 
-</body></html>
+  {% endblock %}
+
+  </body></html>
+
+  
+  
+  
+  
