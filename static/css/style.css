@@ -215,7 +215,6 @@ body {
 	background: white url(/static/img/fond-mairie4.jpg) no-repeat 0 40px;
 	padding-top: 40px;
 	position: relative;
-	padding-bottom: 40px;
 }
 
 #logo {
@@ -258,6 +257,7 @@ h4 {
 }
 
 #footer{
+		font: 13px/20px Ubuntu,"Trebuchet MS", Trebuchet, Tahoma, Arial;
 	background-color: #c6d4dd;
 	height: 100px;
 	vertical-align: middle;
@@ -275,6 +275,7 @@ h4 {
 #adm-widgets{
 	margin-left: 20px;
 	margin-top: 20px;
+	margin-bottom: 40px;
 }
 
 #manifestations{
