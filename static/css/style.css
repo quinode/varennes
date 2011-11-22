@@ -247,6 +247,11 @@ h1, h2 {
 	margin-bottom: 10px;
 }
 
+h3{
+	font: 24px Museo700, "Trebuchet MS", Trebuchet, Tahoma, Arial;
+	
+}
+
 h4 {
 	font: 15px Museo500, "Trebuchet MS", Trebuchet, Tahoma, Arial;
 	margin-bottom: 10px;
@@ -405,5 +410,5 @@ h4{
 
 div#admin-bar{
 	top: 50px;
-	position: absolute;
+	position: fixed;
 }
