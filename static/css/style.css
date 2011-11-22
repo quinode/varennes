@@ -343,6 +343,7 @@ ul.widget-items{
 	padding: 0;
 	overflow-y: scroll;
 	overflow-x: none;
+	font-family: Ubuntu,"Trebuchet MS", Trebuchet, Tahoma, Arial;;
 }
 
 #manifestations ul.widget-items{
