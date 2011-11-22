@@ -27,36 +27,6 @@
         }
     }, 
     {
-        "pk": 2, 
-        "model": "coop_cms.navnode", 
-        "fields": {
-            "parent": 1, 
-            "ordering": 1, 
-            "object_id": 3, 
-            "label": "Plan de la ville", 
-            "content_type": [
-                "coop_cms", 
-                "article"
-            ], 
-            "in_navigation": true
-        }
-    }, 
-    {
-        "pk": 3, 
-        "model": "coop_cms.navnode", 
-        "fields": {
-            "parent": 1, 
-            "ordering": 2, 
-            "object_id": 4, 
-            "label": "Edito du maire", 
-            "content_type": [
-                "coop_cms", 
-                "article"
-            ], 
-            "in_navigation": true
-        }
-    }, 
-    {
         "pk": 4, 
         "model": "coop_cms.navnode", 
         "fields": {
@@ -478,6 +448,66 @@
     }, 
     {
         "pk": 2, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 1, 
+            "ordering": 6, 
+            "object_id": 3, 
+            "label": "Plan de la ville", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 1, 
+            "ordering": 8, 
+            "object_id": 4, 
+            "label": "Edito du maire", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 1, 
+            "ordering": 10, 
+            "object_id": 33, 
+            "label": "Acc\u00e9der \u00e0 Varennes", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "coop_cms.navnode", 
+        "fields": {
+            "parent": 4, 
+            "ordering": 4, 
+            "object_id": 34, 
+            "label": "Groupe minoritaire", 
+            "content_type": [
+                "coop_cms", 
+                "article"
+            ], 
+            "in_navigation": true
+        }
+    }, 
+    {
+        "pk": 2, 
         "model": "coop_cms.article", 
         "fields": {
             "publication": 1, 
@@ -486,30 +516,6 @@
             "modified": "2011-11-14 11:25:02", 
             "content": "contenu de la page", 
             "slug": "presentation"
-        }
-    }, 
-    {
-        "pk": 3, 
-        "model": "coop_cms.article", 
-        "fields": {
-            "publication": 1, 
-            "title": "Plan de la ville", 
-            "created": "2011-11-14 11:25:14", 
-            "modified": "2011-11-14 11:25:14", 
-            "content": "contenu de la page", 
-            "slug": "plan-de-la-ville"
-        }
-    }, 
-    {
-        "pk": 4, 
-        "model": "coop_cms.article", 
-        "fields": {
-            "publication": 1, 
-            "title": "Edito du maire", 
-            "created": "2011-11-14 11:25:28", 
-            "modified": "2011-11-14 11:25:28", 
-            "content": "contenu de la page", 
-            "slug": "edito-du-maire"
         }
     }, 
     {
@@ -534,18 +540,6 @@
             "modified": "2011-11-14 11:26:07", 
             "content": "contenu de la page", 
             "slug": "les-conseillers"
-        }
-    }, 
-    {
-        "pk": 7, 
-        "model": "coop_cms.article", 
-        "fields": {
-            "publication": 1, 
-            "title": "Comptes-rendus", 
-            "created": "2011-11-14 11:26:19", 
-            "modified": "2011-11-14 11:26:19", 
-            "content": "contenu de la page", 
-            "slug": "comptes-rendus"
         }
     }, 
     {
@@ -693,18 +687,6 @@
         }
     }, 
     {
-        "pk": 20, 
-        "model": "coop_cms.article", 
-        "fields": {
-            "publication": 1, 
-            "title": "March\u00e9s publics", 
-            "created": "2011-11-14 11:30:37", 
-            "modified": "2011-11-14 11:30:37", 
-            "content": "contenu de la page", 
-            "slug": "marches-publics"
-        }
-    }, 
-    {
         "pk": 21, 
         "model": "coop_cms.article", 
         "fields": {
@@ -846,6 +828,98 @@
             "modified": "2011-11-14 11:33:36", 
             "content": "contenu de la page", 
             "slug": "loisirs-divers"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "March\u00e9s publics", 
+            "created": "2011-11-14 11:30:37", 
+            "modified": "2011-11-22 09:42:11", 
+            "content": "contenu de la page fdsgds\n\n<br>\n\n", 
+            "slug": "marches-publics"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Plan de la ville", 
+            "created": "2011-11-14 11:25:14", 
+            "modified": "2011-11-22 10:50:13", 
+            "content": "\r\n\n\n<a href=\"/static/uploads/image/20112211103354/Plan-Varennes.jpg\">\n\n\r\n\n  \n  <img src=\"/static/uploads/image/20112211103354/Plan-Varennes-800.jpg\" />\n  \n  \n\n</a>\n\n\r\n\r\n\r\n\r\n", 
+            "slug": "plan-de-la-ville"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Comptes-rendus", 
+            "created": "2011-11-14 11:26:19", 
+            "modified": "2011-11-22 09:56:56", 
+            "content": "contenu de la page", 
+            "slug": "comptes-rendus"
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Acc\u00e8s", 
+            "created": "2011-11-22 10:44:30", 
+            "modified": "2011-11-22 11:20:24", 
+            "content": "\r\n\n\n<h3>\n\n\r\n\r\n\r\n\r\nVoies de communications&nbsp;: une position centrale bien desservie\r\n\r\n\r\n\r\n\n\n</h3>\n\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n<br>\n\n\r\n\r\n\r\n\r\nLieu de passage deux fois mill\u00e9naire, VARENNES-SUR-ALLIER est bien desservie par le r\u00e9seau routier national ainsi que par le rail, et le site est pratiquement accessible \u00e0 l\u2019aviation priv\u00e9e.\r\n  \r\n  \r\n  \r\n  \n  \n  <br>\n  \n  \r\n  \r\n  \r\n  \r\n  \r\n    \r\n    \r\n    \r\n    \n    \n    <br>\n    \n    \r\n    \r\n    \r\n    \r\n    \r\n      \r\n      \r\n      \r\n      \n      \n      <h4>\n      \n      \r\n      \r\n      \r\n      \r\n      \n        \n        <img src=\"/static/img/acces-autoroute.png\">\n        \n        &nbsp; Autoroutes\r\n      \r\n      \r\n      \r\n      \n        \n        </h4>\n        \n        \r\n      \r\n      \r\n      \r\n      \r\n      \r\n      \r\n      \r\n      \n        \n        <br>\n        \n        \r\n      \r\n      \r\n      \r\n      A 71, vers PARIS via ORL\u00c9ANS, \r\n        \r\n        \r\n        \r\n        \n          \n          <br>\n          \n          \r\n        \r\n        \r\n        \r\n        Vers l\u2019Espagne via MONTPELLIER&nbsp;:\r\n          \r\n          \r\n          \r\n          \n            \n            <br>\n            \n            \r\n          \r\n          \r\n          \r\n          Sortie n\u00b0 11 (MONTMARAULT) \u00e0 38 Km.\r\n            \r\n            \r\n            \r\n            \n              \n              <br>\n              \n              \r\n            \r\n            \r\n            \r\n            \r\n              \r\n              \r\n              \r\n              \n                \n                <br>\n                \n                \r\n              \r\n              \r\n              \r\n              A 72, vers LYON via ST \u00c9TIENNE&nbsp;: \r\n                \r\n                \r\n                \r\n                \n                  \n                  <br>\n                  \n                  \r\n                \r\n                \r\n                \r\n                Sortie n\u00b0 2 (THIERS-OUEST) \u00e0 58 Km.\r\n                  \r\n                  \r\n                  \r\n                  \n                    \n                    <br>\n                    \n                    \r\n                  \r\n                  \r\n                  \r\n                  \r\n                    \r\n                    \r\n                    \r\n                    \n                      \n                      <br>\n                      \n                      \r\n                    \r\n                    \r\n                    \r\n                    \r\n                      \r\n                      \r\n                      \r\n                      \n                        \n                        <h4>\n                        \n                        \r\n                      \r\n                      \r\n                      \r\n                    \n                          \n                          <img src=\"/static/img/acces-route.png\">\n                          \n                          &nbsp;  Routes nationales\r\n                      \r\n                      \r\n                      \r\n                      \n                          \n                          </h4>\n                          \n                          \r\n                      \r\n                      \r\n                      \r\n                      \r\n                      \r\n                      \r\n                      \r\n                      \n                          \n                          <br>\n                          \n                          \r\n                      \r\n                      \r\n                      \r\n                      R.N. 7, vers PARIS via A 77 (318 Km) \r\n                        \r\n                        \r\n                        \r\n                        \n                            \n                            <br>\n                            \n                            \r\n                        \r\n                        \r\n                        \r\n                        vers LYON (149 Km)\r\n                          \r\n                          \r\n                          \r\n                          \n                              \n                              <br>\n                              \n                              \r\n                          \r\n                          \r\n                          \r\n                          \r\n                            \r\n                            \r\n                            \r\n                            \n                                \n                                <br>\n                                \n                                \r\n                            \r\n                            \r\n                            \r\n                            \r\n                              \r\n                              \r\n                              \r\n                              \n                                  \n                                  <h4>\n                                  \n                                  \r\n                              \r\n                              \r\n                              \r\n                             \n                                    \n                                    <img src=\"/static/img/acces-train.png\">\n                                    \n                                    &nbsp;  Voies ferr\u00e9es\r\n                              \r\n                              \r\n                              \r\n                              \n                                    \n                                    </h4>\n                                    \n                                    \r\n                              \r\n                              \r\n                              \r\n                              \r\n                              \r\n                              \r\n                              \r\n                              \n                                    \n                                    <br>\n                                    \n                                    \r\n                              \r\n                              \r\n                              \r\n                              N\u0153ud ferroviaire de ST GERMAIN-DES-FOSS\u00c9S\r\n                                \r\n                                \r\n                                \r\n                                \n                                      \n                                      <br>\n                                      \n                                      \r\n                                \r\n                                \r\n                                \r\n                                \u00e0 14 Km, desservant PARIS, LYON, BORDEAUX, NANTES, MONTPELLIER\u2026\r\n                                  \r\n                                  \r\n                                  \r\n                                  \n                                        \n                                        <br>\n                                        \n                                        \r\n                                  \r\n                                  \r\n                                  \r\n                                  \r\n                                    \r\n                                    \r\n                                    \r\n                                    \n                                          \n                                          <a target=\"_blank\" href=\"http://www.ter-sncf.com/Region/auvergne/gare/Varennes%20sur%20Allier.aspx\">\n                                          \n                                          \r\n                                    \r\n                                    \r\n                                    \r\n                                    Arr\u00eats voyageurs \u00e0 VARENNES-SUR-ALLIER\r\n                                    \r\n                                    \r\n                                    \r\n                                    \n                                          \n                                          </a>\n                                          \n                                          \r\n                                    \r\n                                    \r\n                                    \r\n                                    \r\n                                    \r\n                                    \r\n                                    \r\n                                    \n                                          \n                                          <br>\n                                          \n                                          \r\n                                    \r\n                                    \r\n                                    \r\n                                    \r\n                                      \r\n                                      \r\n                                      \r\n                                      \n                                            \n                                            <br>\n                                            \n                                            \r\n                                      \r\n                                      \r\n                                      \r\n                                      \r\n                                        \r\n                                        \r\n                                        \r\n                                        \n                                              \n                                              <a target=\"_blank\" href=\"http://fret.sncf.com/\">\n                                              \n                                              \r\n                                        \r\n                                        \r\n                                        \r\n                                        Fret SNCF\r\n                                        \r\n                                        \r\n                                        \r\n                                        \n                                              \n                                              </a>\n                                              \n                                              \r\n                                        \r\n                                        \r\n                                        \r\n                                        \r\n                                        \r\n                                        \r\n                                        \r\n                                        \n                                              \n                                              <br>\n                                              \n                                              \r\n                                        \r\n                                        \r\n                                        \r\n                                        Connexion au r\u00e9seau&nbsp;: possible, zone d\u2019activit\u00e9s de LA FEUILLOUSE \r\n                                          \r\n                                          \r\n                                          \r\n                                          \n                                                \n                                                <br>\n                                                \n                                                \r\n                                          \r\n                                          \r\n                                          \r\n                                          (S\u2019adresser au pr\u00e9sident de La communaut\u00e9 de communes, 18 rue VOUROUX, 03150 VARENNES-SUR-ALLIER, T\u00e9l.&nbsp;; 04 70 45 00 99).\r\n                                            \r\n                                            \r\n                                            \r\n                                            \n                                                  \n                                                  <br>\n                                                  \n                                                  \r\n                                            \r\n                                            \r\n                                            \r\n                                            \r\n                                              \r\n                                              \r\n                                              \r\n                                              \n                                                    \n                                                    <br>\n                                                    \n                                                    \r\n                                              \r\n                                              \r\n                                              \r\n                                              \r\n                                                \r\n                                                \r\n                                                \r\n                                                \n                                                      \n                                                      <h4>\n                                                      \n                                                      \r\n                                                \r\n                                                \r\n                                                \r\n                                                \n                                                        \n                                                        <img src=\"/static/img/acces-avion.png\">\n                                                        \n                                                        &nbsp;  Liaison a\u00e9riennes \r\n                                                \r\n                                                \r\n                                                \r\n                                                \n                                                        \n                                                        </h4>\n                                                        \n                                                        \r\n                                                \r\n                                                \r\n                                                \r\n                                                \r\n                                                \r\n                                                \r\n                                                \r\n                                                \n                                                        \n                                                        <br>\n                                                        \n                                                        \r\n                                                \r\n                                                \r\n                                                \r\n                                                A\u00e9roport de VICHY-CHARMEIL (22 Km).\r\n                                                  \r\n                                                  \r\n                                                  \r\n                                                  \n                                                          \n                                                          <br>\n                                                          \n                                                          \r\n                                                  \r\n                                                  \r\n                                                  \r\n                                                  Adresse postale&nbsp;: Cedex 449, 03110 CHARMEIL\r\n                                                    \r\n                                                    \r\n                                                    \r\n                                                    \n                                                            \n                                                            <br>\n                                                            \n                                                            \r\n                                                    \r\n                                                    \r\n                                                    \r\n                                                    T\u00e9l. 04 70 32 47 15.\r\n                                                      \r\n                                                      \r\n                                                      \r\n                                                      \n                                                              \n                                                              <br>\n                                                              \n                                                              \r\n                                                      \r\n                                                      \r\n                                                      \r\n                                                      ", 
+            "slug": "acces"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Edito du maire", 
+            "created": "2011-11-14 11:25:28", 
+            "modified": "2011-11-22 11:02:30", 
+            "content": "\r\n\n\n<img title=\"\" style=\"float: left;padding-right:20px;\" class=\"dj-img-left\" src=\"http://localhost:8000/static/uploads/image/20112211105733/photo%20maire.jpg\">\n\n\r\n\r\n\r\n\r\n\r\nAu moment o\u00f9 j\u2019\u00e9cris ces lignes, je sais que dans quelques heures, notre site sera de nouveau fonctionnel.\r\n\r\n\r\n\r\n\r\n  \r\n  \n  \n  <br>\n  \n  \r\n  \r\n  \r\n\r\n\r\n\r\nJ\u2019esp\u00e8re tr\u00e8s sinc\u00e8rement qu\u2019il pourra, \u00e0 l\u2019avenir, vous apporter les informations que vous \u00eates en droit d\u2019attendre, que vous soyez varennois et varennoises ou personnes d\u00e9sireuses de mieux conna\u00eetre notre commune.\r\n  \r\n  \r\n  \r\n  \r\n    \r\n    \n    \n    <br>\n    \n    \r\n    \r\n    \r\n  \r\n  \r\n  \r\n  Comment pourrais-je, \u00e0 ce moment, oublier que notre pays et ceux avec lesquels nous avons fond\u00e9 l\u2019Europe sont confront\u00e9s \u00e0 une crise inqui\u00e9tante pour notre avenir.\r\n    \r\n    \r\n    \r\n    \r\n      \r\n      \n      \n      <br>\n      \n      \r\n      \r\n      \r\n    \r\n    \r\n    \r\n    L\u2019aust\u00e9rit\u00e9, la rigueur, l\u2019allongement de la dur\u00e9e du travail sont-elles les seules solutions pour assurer une vie meilleure \u00e0 nos enfants ou petits-enfants.\r\n      \r\n      \r\n      \r\n      \r\n        \r\n        \n        \n        <br>\n        \n        \r\n        \r\n        \r\n      \r\n      \r\n      \r\n      Tous ensemble, je vous propose que nous exigions des mesures efficaces o\u00f9 l\u2019on ne demandera pas toujours aux m\u00eames de faire des sacrifices pour que le monde de la finance soit prot\u00e9g\u00e9.\r\n        \r\n        \r\n        \r\n        \r\n          \r\n          \n          \n          <br>\n          \n          \r\n          \r\n          \r\n            \r\n            \n            \n            <br>\n            \n            \r\n            \r\n            \r\n          \r\n          \r\n          \r\n          \u00c0 tr\u00e8s bient\u00f4t,\r\n            \r\n            \r\n            \r\n            \r\n              \r\n              \n              \n              <br>\n              \n              \r\n              \r\n              \r\n                \r\n                \n                \n                <br>\n                \n                \r\n                \r\n                \r\n              \r\n              \r\n              \r\n              Pierre COURTADON,\u2028 Maire de Varennes-sur-Allier\r\n                \r\n                \r\n                \r\n                \r\n                  \r\n                  \n                  \n                  <br>\n                  \n                  \r\n                  \r\n                  ", 
+            "slug": "edito-du-maire"
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "coop_cms.article", 
+        "fields": {
+            "publication": 1, 
+            "title": "Groupe minoritaire", 
+            "created": "2011-11-22 11:54:24", 
+            "modified": "2011-11-22 11:54:24", 
+            "content": "contenu de la page", 
+            "slug": "groupe-minoritaire"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "coop_cms.image", 
+        "fields": {
+            "file": "image/20112211103354/Plan-Varennes.jpg", 
+            "modified": "2011-11-22 10:33:55", 
+            "name": "Plan de Varennes", 
+            "created": "2011-11-22 10:33:54"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "coop_cms.image", 
+        "fields": {
+            "file": "image/20112211105733/photo maire.jpg", 
+            "modified": "2011-11-22 10:57:33", 
+            "name": "Photo du maire", 
+            "created": "2011-11-22 10:57:33"
         }
     }
 ]

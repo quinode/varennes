@@ -3,6 +3,7 @@ from django.conf.urls.defaults import patterns, include, url
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
+import sys
 
 #from autocomplete.views import autocomplete
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
