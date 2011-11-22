@@ -50,6 +50,10 @@ ADMIN_MEDIA_PREFIX = '/static/admin/'
 import admin_tools
 ADMIN_TOOLS_PATH = os.path.dirname(os.path.abspath(admin_tools.__file__))
 
+
+IMAGE_FOLDER = 'image'
+DOCUMENT_FOLDER = 'document'
+
 STATICFILES_DIRS = (
     os.path.join(DIRNAME,'static/'),
     os.path.join(ADMIN_TOOLS_PATH,'media/'),

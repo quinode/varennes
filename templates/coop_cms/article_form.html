@@ -13,7 +13,7 @@ $(function(){
     $("#article_form").height($("#article_form_div").height());
 
     $('#adminbar_cancel').attr('href', '{{article.get_absolute_url}}');
-    $("#adminbar_medialibrary").pageSlide({width:'350px', direction:'right'});
+    //$("#adminbar_medialibrary").pageSlide({width:'350px', direction:'right'});
     $('#adminbar_save').click(function(event) {
         $("#article_form").submit();
         event.preventDefault();
@@ -51,7 +51,7 @@ $(function(){
 <input type="submit" style="visibility: hidden">
 </form>
 </div>
-<form style="height: 0" id="article_publication_form" method="POST" action="{{ article.get_publish_url }}"">{% csrf_token %}
+<form style="height: 0" id="article_publication_form" method="POST" action="{{ article.get_publish_url }}">{% csrf_token %}
     <input type="hidden" name="status" value="{{ARTICLE_PUBLISHED}}">
     <input type="submit" style="visibility: hidden">
 </form>

@@ -18,7 +18,7 @@
 
 
 {% block document %}
-
+{% spaceless %}
     {% block title %}
         <h2 id="title">{{article.title|safe}}</h2>
     {% endblock %}
@@ -26,5 +26,5 @@
         {{article.content|safe}}
         </div></div>
     </div>
-
+{% endspaceless %}
 {% endblock %}
