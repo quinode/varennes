@@ -27,5 +27,6 @@ if settings.DEBUG or ('test' in sys.argv):
     )
     
 urlpatterns += patterns('',
+    (r'^', include('coop_agenda.urls')),
     (r'^', include('coop_cms.urls')),
 )

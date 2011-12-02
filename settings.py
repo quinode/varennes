@@ -23,7 +23,7 @@ DATABASES = {
 }
 
 TIME_ZONE = 'Europe/Paris'
-LANGUAGE_CODE = 'fr-FR'
+LANGUAGE_CODE = 'fr'
 SITE_ID = 1
 USE_I18N = True
 USE_L10N = True
@@ -130,6 +130,7 @@ INSTALLED_APPS = (
     'html_field',
     'djaloha',
     'coop_cms',
+    'coop_agenda',
 
 )
 
