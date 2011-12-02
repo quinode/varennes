@@ -35,7 +35,7 @@ import django.conf.global_settings as DEFAULT_SETTINGS
 DEFAULT_CONTENT_TYPE = 'text/html'
 DEFAULT_CHARSET='utf-8'
 
-AUTH_PROFILE_MODULE = 'fcpe.adherent'
+#AUTH_PROFILE_MODULE = 'fcpe.adherent'
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
@@ -90,7 +90,7 @@ ROOT_URLCONF = 'varennes.urls'
 
 
 TEMPLATE_DIRS = (
-    os.path.join(DIRNAME+'/templates/'),    
+    os.path.join(DIRNAME,'templates/'),    
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
