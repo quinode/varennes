@@ -20,7 +20,6 @@ urlpatterns = patterns('',
     (r'^rpc_relay\.html$', direct_to_template,
          {'template': 'rpc_relay.html', 'mimetype': 'text/html'}),
 
-
     
 )
 

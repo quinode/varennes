@@ -22,11 +22,12 @@ DATABASES = {
     }
 }
 
+USE_L10N = True
 TIME_ZONE = 'Europe/Paris'
 LANGUAGE_CODE = 'fr'
 SITE_ID = 1
 USE_I18N = True
-USE_L10N = True
+
 
 import locale
 locale.setlocale(locale.LC_ALL,'')
@@ -130,7 +131,8 @@ INSTALLED_APPS = (
     'html_field',
     'djaloha',
     'coop_cms',
-    'coop_agenda',
+    #'coop_agenda',
+    'south',
 
 )
 
