@@ -4,6 +4,7 @@ from django.conf.urls.defaults import patterns, include, url
 from django.contrib import admin
 admin.autodiscover()
 import sys
+from django.views.generic.simple import direct_to_template
 
 #from autocomplete.views import autocomplete
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
@@ -15,6 +16,11 @@ urlpatterns = patterns('',
 #    url('^autocomplete/', include(autocomplete.urls)),
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', include(admin.site.urls)),
+
+    (r'^rpc_relay\.html$', direct_to_template,
+         {'template': 'rpc_relay.html', 'mimetype': 'text/html'}),
+
+
     
 )
 
