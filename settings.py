@@ -131,7 +131,7 @@ INSTALLED_APPS = (
     'html_field',
     'djaloha',
     'coop_cms',
-    #'coop_agenda',
+    'coop_agenda',
     'south',
 
 )
